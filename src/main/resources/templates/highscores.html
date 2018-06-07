@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hellfreeze</title>
+    <link rel="stylesheet" href="/css/highscore.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+    <div class="emptySpace"></div>
+<h1>TOP 5 HIGHSCORES</h1>
+    <div class="emptySpace"></div>
+<div th:each="highscore : ${highscores}" th:text="${highscore.gameUserName} + '  ' + ${highscore.totalScore}"></div>
+    <div class="emptySpace"></div>
+<a href="/hemsida"> BACK TO GAME </a>
+
+</body>
+</html>

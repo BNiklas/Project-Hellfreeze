@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(10, 10, 10);
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: center;
+}
+
+#h1 {
+    font-size: 100px;
+}
+
+.story{
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+#makers{
+    font-size: 17px;
+    list-style-type: none;
+}
+
+#specialThanks{
+    font-size: 17px;
+}
+
+.smallEmptySpace{
+    height: 20px;
+}
+
+.emptySpace{
+    height: 60px;
+}
+
+a:link {
+    color: rgb(50, 150, 180) ;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+
+a:visited {
+    color: rgb(50, 150, 180);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(50, 150, 180);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(50, 150, 180);
+    background-color: transparent;
+    text-decoration: none;
+}

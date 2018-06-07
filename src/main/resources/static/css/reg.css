@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(10, 10, 10);
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    text-align: center;
+}
+
+#emptySpace{
+     height: 200px;
+}
+
+.smallEmptySpace{
+     height: 10px;
+}
+

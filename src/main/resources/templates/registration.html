@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Hellfreeze</title>
+    <link rel="stylesheet" href="/css/reg.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+    <div id="emptySpace"></div>
+<h1>REGISTER NEW USER</h1>
+<form action="/registration" method="post" th:object="${gameUser}" >
+
+    USERNAME <input type="text" th:field="*{gameUserName}" required="required"/>
+    PASSWORD <input type="password" th:field="*{password}" required="required"/>
+    EMAIL <input type="text" th:field="*{email}" required="required"/>
+    <input type="submit" value="Submit"/>
+    <div class="smallEmptySpace"></div>
+    <p th:if="${#fields.hasErrors('gameUserName')}">USERNAME MUST BE BETWEEN 2 AND 60 CHARACTERS</p>
+    <div class="smallEmptySpace"></div>
+    <p th:if="${#fields.hasErrors('password')}">PASSWORD MUST BE BETWEEN 2 AND 60 CHARACTERS</p>
+    <div class="smallEmptySpace"></div>
+    <p th:if="${#fields.hasErrors('email')}">INVALID EMAIL ADDRESS</p>
+
+
+</form>
+</body>
+</html>
+
+
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hellfreeze</title>
+    <link rel="stylesheet" href="/css/log.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+<body>
+<h1>Hellfreeze</h1>
+        <div class="emptySpace"></div>
+<div th:if="${param.error}">
+        INVALID USERNAME AND PASSWORD
+</div>
+<div class="smallEmptySpace"></div>
+<div th:if="${param.logout}">
+        YOU HAVE BEEN LOGGED OUT
+</div>
+<div class="smallEmptySpace"></div>
+<div th:if="${greeting}" th:text="${greeting}"></div>
+<div class="smallEmptySpace"></div>
+<form th:action="@{/login}" method="post">
+    <div><label> USERNAME: <input type="text" name="username"/> </label></div>
+    <div class="smallEmptySpace"></div>
+    <div><label> PASSWORD: <input type="password" name="password"/> </label></div>
+    <div class="smallEmptySpace"></div>
+    <div><input type="submit" value="Sign In"/></div>
+    <div class="emptySpace"></div>
+</form>
+<a href="/registration">REGISTER NEW USER</a>
+</body>
+</html>
+
+
+
+
